@@ -1,0 +1,40 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 10fr 1fr;
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  justify-items: stretch;
+  align-items: center;
+}
+
+.grid-container > div {
+  background: #fbcfe8;
+}
+
+.grid-container > div:nth-child(1) {
+  grid-column: 1 / span 2;
+}
+
+.grid-container > div:nth-child(2) {
+  grid-column: span 3;
+}
+
+.grid-container > div:nth-child(3) {
+  grid-column: span 1;
+}
+
+.grid-container > div:nth-child(4) {
+  grid-column: 2 / span 3;
+}
+
+.grid-container > div:nth-child(5) {
+  grid-column: span 3;
+}
+
+.grid-container > div:nth-child(6) {
+  grid-column: span 3;
+}

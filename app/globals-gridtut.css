@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --bg-color: 0,0,0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--bg-color));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
+
+:root {
+  --main-radius: 5px;
+  --main-padding: ;
+}
+
+html {
+  width: 100%;
+}
+
+.cont {
+  background: red;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  grid-template-areas:
+    'nav nav nav nav'
+    'sidebar main main main'
+    'sidebar content1 content2 content3'
+    'sidebar footer footer footer';
+  grid-gap: 0.2rem;
+}
+
+body {
+  background: #bbb;
+  width: 100%;
+}
+
+nav {
+  background: #d39e76;
+  grid-area: nav;
+  min-height: 100px;
+}
+main {
+  background: #ffa7a7;
+  grid-area: main;
+}
+#sidebar {
+  background: #abffa7;
+  grid-area: sidebar;
+}
+#content1 {
+  background: #ffa7f9;
+  grid-area: content1;
+}
+#content2 {
+  background: #a7d0ff;
+  grid-area: content2;
+}
+#content3 {
+  background: #94a4dd;
+  grid-area: content3;
+}
+footer {
+  background: #e2ffa7;
+  grid-area: footer;
+  min-height: 200px;
+}
+
+@media only screen and (max-width: 550px) {
+  .cont {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 2.2fr 1.2fr 1.2fr 1fr 1fr;
+    grid-template-areas: 'nav' 'main' 'content1' 'content2' 'content3' 'footer';
+  }
+
+  #sidebar {
+    display: none;
+  }
+}
