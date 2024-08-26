@@ -53,7 +53,7 @@ const NavLink = ({ title, url }: { title: string; url: string }) => {
   return (
     <Link
       href={url}
-      className={`hover:text-gold ${pathname === url && 'text-gold hover:text-white'} cursor-pointer whitespace-nowrap px-4 py-6 text-xl font-light capitalize first:border-t first:border-white/15 md:rounded md:first:border-0 md:first:pl-0`}
+      className={`hover:text-gold ${pathname === url && 'text-gold'} cursor-pointer whitespace-nowrap px-4 py-6 text-xl font-light capitalize first:border-t first:border-white/15 md:rounded md:first:border-0 md:first:pl-0`}
     >
       {title}
     </Link>
