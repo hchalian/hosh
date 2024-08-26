@@ -1,6 +1,8 @@
 'use client';
 import { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const links = [
   { title: 'home', url: '/' },
@@ -14,6 +16,7 @@ export default function Nav() {
   return (
     <nav className="border-y border-white/10">
       <div className="flex items-center justify-between px-3 py-2 md:hidden">
+        <div className="pl-4 font-serif text-2xl">Personal Injury Lawyers</div>
         <button className="block" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? (
             <span>
@@ -25,7 +28,6 @@ export default function Nav() {
             </span>
           )}
         </button>
-        <div className="font-serif text-2xl">Personal Injury Lawyers</div>
       </div>
       <div
         data-name="link-wrap"
@@ -33,8 +35,8 @@ export default function Nav() {
           isOpen ? '' : 'hidden'
         }`}
       >
-        {links.map(({ title }) => (
-          <NavLink title={title} key={title} />
+        {links.map(({ title, url }) => (
+          <NavLink title={title} url={url} key={title} />
         ))}
         <div className="hidden items-center justify-end whitespace-nowrap font-serif lg:flex lg:flex-grow lg:text-3xl xl:text-4xl">
           Personal Injury Lawyers
@@ -44,10 +46,16 @@ export default function Nav() {
   );
 }
 
-const NavLink = ({ title }: { title: string }) => {
+//pathname === props.href && 'bg-background text-foreground'
+
+const NavLink = ({ title, url }: { title: string; url: string }) => {
+  const pathname = usePathname();
   return (
-    <div className="hover:text-gold cursor-pointer whitespace-nowrap px-4 py-6 text-xl font-light capitalize first:border-t first:border-white/15 md:rounded md:first:border-0 md:first:pl-0">
+    <Link
+      href={url}
+      className={`hover:text-gold ${pathname === url && 'text-gold hover:text-white'} cursor-pointer whitespace-nowrap px-4 py-6 text-xl font-light capitalize first:border-t first:border-white/15 md:rounded md:first:border-0 md:first:pl-0`}
+    >
       {title}
-    </div>
+    </Link>
   );
 };

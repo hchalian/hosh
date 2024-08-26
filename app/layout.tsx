@@ -29,8 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${outfit.variable} ${cormorant.variable}`}>
       <body>
-        <div className="container mx-auto">
-          {/* <div className="container mx-auto border border-dashed border-gray-700"> */}
+        <div className="container mx-auto flex h-full flex-col">
           <Header />
           <Nav />
           {children}

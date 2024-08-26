@@ -12,6 +12,7 @@ html,
 body {
   background: var(--bg-color);
   color: var(--font-color);
+  height: 100%;
 }
 
 @layer base {
