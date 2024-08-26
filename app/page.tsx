@@ -10,10 +10,10 @@ const Hero = () => {
       <div className="bg-primary flex w-full flex-col bg-opacity-80 pt-10 md:flex-row">
         <div data-contentname="hero-text" className="p-10 md:w-1/2">
           <h1 className="md:text-4xl lg:text-7xl">
-            <span className="block whitespace-nowrap md:inline lg:block xl:inline">
+            <span className="block md:inline md:whitespace-nowrap lg:block xl:inline">
               Los Angeles Attorney{' '}
             </span>
-            <span className="block whitespace-nowrap md:inline lg:block xl:inline">
+            <span className="block md:inline md:whitespace-nowrap lg:block xl:inline">
               Peter Hosharian
             </span>
           </h1>
