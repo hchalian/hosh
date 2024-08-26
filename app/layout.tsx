@@ -20,11 +20,15 @@ export const metadata: Metadata = {
   title:
     'Los Angeles attorney Peter Hosharain specializes in personal injury law - hosharianlaw.com',
   description:
-    'Los Angeles based lawyer Peter Hosharian of Hosharian Law specializes in Personal Injury. Schedule your free consultation with attorney Peter Hosharian and visit our office located in Burbank California.',
+    'Los Angeles, Glendale, Burbank based lawyer Peter Hosharian of Hosharian Law specializes in Personal Injury. If you have had any Auto, Motorcycle and Bicycle accident related injury, medical malpractice injury or a slip and fall injuery, we can help.',
   keywords: [
     'personal injury',
     'personal injury lawyer',
-    'auto accident laywer',
+    'slip and fall',
+    'slip and fall lawyer',
+    'medial malpractice',
+    'medial malpractice lawyer',
+    'auto accident lawyer',
     'car accident lawyer',
     'bodily injury lawyer',
     'workers compensation lawyer',
