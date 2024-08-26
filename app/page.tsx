@@ -17,19 +17,26 @@ const Hero = () => {
               Peter Hosharian
             </span>
           </h1>
-          <p className="mt-8 text-xl font-light leading-relaxed tracking-wide md:text-base lg:text-2xl lg:leading-relaxed">
-            Welcome to our outique personal injury law firm, established in
-            1995. We specialize exclusively in representing individuals injured
-            due to auto, motorcycle, bicycle, and pedestrian accidents, as well
-            as those affected by premises liability, dog bites, medical
-            malpractice, and product liability. Our firm is dedicated to
-            providing specialized service and personalized care for each case,
-            ensuring we achieve the best possible results for our clients. With
-            nearly three decades of experience, we have developed a reputation
-            for excellence and commitment. Contact us today for a free
-            consultation. We proudly serve our community in both Spanish and
-            Armenian.
-          </p>
+          <section className="mt-8 space-y-4 text-xl font-light leading-relaxed tracking-wide md:text-base lg:text-2xl lg:leading-relaxed">
+            <p>
+              Welcome to our outique personal injury law firm, established in
+              1995. We specialize exclusively in representing individuals
+              injured due to auto, motorcycle, bicycle, and pedestrian
+              accidents, as well as those affected by premises liability, dog
+              bites, medical malpractice, and product liability.
+            </p>
+            <p>
+              Our firm is dedicated to providing specialized service and
+              personalized care for each case, ensuring we achieve the best
+              possible results for our clients. With nearly three decades of
+              experience, we have developed a reputation for excellence and
+              commitment.
+            </p>
+            <p>
+              Contact us today for a free consultation. We proudly serve our
+              community in both Spanish and Armenian.
+            </p>
+          </section>
           <div className="text-gold tracking-relaxed border-t-gold/70 mt-8 border-t pt-4 font-serif text-4xl font-light">
             <p>
               If you hire a billboard attorney, you will only see that attorney
