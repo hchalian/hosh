@@ -7,7 +7,7 @@ export default function Home() {
 const Hero = () => {
   return (
     <div className="bg-[url('/hero-bg.jpg')] bg-cover">
-      <div className="from-primary/90 to-primary/40 via-primary/90 flex w-full flex-col bg-gradient-to-b md:flex-row lg:bg-gradient-to-r">
+      <div className="bg-diffuse-blue flex w-full flex-col md:flex-row">
         <div data-contentname="hero-text" className="p-10 md:w-1/2">
           <h1 className="md:text-4xl lg:text-7xl">
             <span className="block md:inline md:whitespace-nowrap lg:block xl:inline">

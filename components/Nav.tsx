@@ -13,6 +13,7 @@ const links = [
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
   return (
     <nav className="border-y border-white/10">
       <div className="flex items-center justify-between px-3 py-2 md:hidden">
@@ -36,7 +37,14 @@ export default function Nav() {
         }`}
       >
         {links.map(({ title, url }) => (
-          <NavLink title={title} url={url} key={title} />
+          <Link
+            href={url}
+            key={title}
+            onClick={() => setIsOpen(!isOpen)}
+            className={`hover:text-gold ${pathname === url && 'text-gold'} cursor-pointer whitespace-nowrap px-4 py-6 text-xl font-light capitalize first:border-t first:border-white/15 md:rounded md:first:border-0 md:first:pl-0`}
+          >
+            {title}
+          </Link>
         ))}
         <div className="hidden items-center justify-end whitespace-nowrap font-serif lg:flex lg:flex-grow lg:text-3xl xl:text-4xl">
           Personal Injury Lawyers
@@ -45,17 +53,3 @@ export default function Nav() {
     </nav>
   );
 }
-
-//pathname === props.href && 'bg-background text-foreground'
-
-const NavLink = ({ title, url }: { title: string; url: string }) => {
-  const pathname = usePathname();
-  return (
-    <Link
-      href={url}
-      className={`hover:text-gold ${pathname === url && 'text-gold'} cursor-pointer whitespace-nowrap px-4 py-6 text-xl font-light capitalize first:border-t first:border-white/15 md:rounded md:first:border-0 md:first:pl-0`}
-    >
-      {title}
-    </Link>
-  );
-};
