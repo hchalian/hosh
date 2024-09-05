@@ -8,7 +8,7 @@ export default function PersonalInjury() {
       </div>
       <section className="p-8">
         <article>
-          <h2>Our record with personal injury cases</h2>
+          <h2>Proven Success in Personal Injury Cases</h2>
           <p>
             For over 30 years, our personal injury law firm has successfully
             recovered hundreds of millions of dollars for thousands of clients
