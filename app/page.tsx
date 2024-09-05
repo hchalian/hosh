@@ -1,7 +1,12 @@
 import Image from 'next/image';
 
 export default function Home() {
-  return <Hero />;
+  return (
+    <>
+      <Hero />
+      <PersonalInjury />
+    </>
+  );
 }
 
 const Hero = () => {
@@ -19,7 +24,7 @@ const Hero = () => {
           </h1>
           <section className="mt-8 space-y-4 text-xl font-light leading-relaxed tracking-wide md:text-base lg:text-2xl lg:leading-relaxed">
             <p>
-              Welcome to our outique personal injury law firm, established in
+              Welcome to our boutique personal injury law firm, established in
               1995. We specialize exclusively in representing individuals
               injured due to auto, motorcycle, bicycle, and pedestrian
               accidents, as well as those affected by premises liability, dog
@@ -37,7 +42,7 @@ const Hero = () => {
               community in both Spanish and Armenian.
             </p>
           </section>
-          <div className="text-gold tracking-relaxed border-t-gold/70 mt-8 border-t pt-4 font-serif text-4xl font-light">
+          <div className="tracking-relaxed mt-8 border-t border-t-gold/70 pt-4 font-serif text-4xl font-light text-gold">
             <p>
               If you hire a billboard attorney, you will only see that attorney
               on a billboard.
@@ -61,5 +66,26 @@ const Hero = () => {
         </div>
       </div>
     </div>
+  );
+};
+
+const PersonalInjury = () => {
+  return (
+    <section>
+      <h2>Personal Injury</h2>
+      <p>
+        For over 30 years, our personal injury law firm has successfully
+        recovered hundreds of millions of dollars for thousands of clients
+        injured in automobile, pedestrian, motorcycle, and bicycle accidents, as
+        well as slip and fall incidents, emotional distress cases, and other
+        negligence-related situations. Our dedicated team is thoroughly equipped
+        to handle every aspect of Personal Injury Claims, guiding you from the
+        initial insurance claim to a jury trial in the Superior Court.
+      </p>
+      <h3>Pracatice areas</h3>
+      <p>Auto, Pedestrian, Motorcycle and Bicycle Accidents</p>
+      <p>Slip and Fall</p>
+      <p>MEDICAL MALPRACTICE</p>
+    </section>
   );
 };
