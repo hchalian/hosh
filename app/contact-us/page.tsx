@@ -48,10 +48,6 @@ export default function ContantUs() {
             </div>
           )}
 
-          <div className="m-10 border p-10 font-mono">
-            state --- {state && JSON.stringify(state)}
-          </div>
-
           <div className="mb-4">
             <label htmlFor="fullname">Full Name</label>
             <input
