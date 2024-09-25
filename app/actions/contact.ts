@@ -6,7 +6,7 @@ const phoneRegex = new RegExp(
 );
 
 const contactSchema = z.object({
-  fullname: z.string().min(1).max(200),
+  fullname: z.string().min(2).max(200),
   phone: z.string().regex(phoneRegex, 'area code plus number please'),
   email: z.string().email().max(200),
   details: z.string().min(10).max(5000),
@@ -22,12 +22,15 @@ export async function sendContactInfo(
   prevState: FormState,
   formData: FormData,
 ) {
-  const result = contactSchema.safeParse({
+  const cleanData = {
     fullname: formData.get('fullname'),
     phone: formData.get('phone'),
     email: formData.get('email'),
+    referredby: formData.get('referredby'),
     details: formData.get('details'),
-  });
+  };
+
+  const result = contactSchema.safeParse(cleanData);
 
   if (result.success === false) {
     return {
@@ -42,23 +45,20 @@ export async function sendContactInfo(
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({
-      key: 'value', // Replace with your data
-    }),
+    body: JSON.stringify(cleanData),
   });
 
-  const res = await response.json();
-  console.log(res);
+  const emailResult = await response.json();
 
-  // Call postData when needed, for example in an event handler
+  if (emailResult?.error) {
+    return {
+      type: 'error',
+      message: emailResult?.error,
+    };
+  }
 
-  // const myPromise = new Promise((resolve, reject) => {
-  //   setTimeout(() => {
-  //     resolve({ type: 'success', message: 'Your email was sent' });
-  //   }, 3000);
-  // });
-
-  // return myPromise;
-
-  return { type: 'success', message: 'Your email was sent' };
+  return {
+    type: 'success',
+    message: `Thank you ${emailResult.fullname}, your question was sent. Someone will be in contanct with you shortly`,
+  };
 }
