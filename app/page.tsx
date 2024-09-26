@@ -72,7 +72,7 @@ const Hero = () => {
 const PersonalInjury = () => {
   return (
     <section>
-      <h2>Personal Injury</h2>
+      {/* <h2>Personal Injury</h2>
       <p>
         For over 30 years, our personal injury law firm has successfully
         recovered hundreds of millions of dollars for thousands of clients
@@ -85,7 +85,7 @@ const PersonalInjury = () => {
       <h3>Pracatice areas</h3>
       <p>Auto, Pedestrian, Motorcycle and Bicycle Accidents</p>
       <p>Slip and Fall</p>
-      <p>MEDICAL MALPRACTICE</p>
+      <p>MEDICAL MALPRACTICE</p> */}
     </section>
   );
 };
