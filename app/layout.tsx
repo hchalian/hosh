@@ -3,6 +3,7 @@ import { Cormorant, Outfit } from 'next/font/google';
 import './globals.css';
 import Nav from '@/components/Nav';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const cormorant = Cormorant({
   subsets: ['latin'],
@@ -55,6 +56,7 @@ export default function RootLayout({
           <Header />
           <Nav />
           {children}
+          <Footer />
         </div>
       </body>
     </html>
