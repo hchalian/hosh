@@ -117,7 +117,7 @@ const FooterLinks = () => {
   return (
     <div
       data-name="link-wrap"
-      className="flex flex-col overflow-hidden border-y border-white/15 py-10 md:flex md:h-auto md:flex-row md:gap-4 md:divide-y-0"
+      className="flex flex-col items-center overflow-hidden border-y border-white/15 px-5 py-10 md:h-auto md:flex-row md:justify-center md:gap-4 md:divide-y-0"
     >
       {links.map(({ title, url }) => (
         <Link
@@ -134,8 +134,8 @@ const FooterLinks = () => {
 
 const Disclaimer = () => {
   return (
-    <div className="my-10 space-y-3">
-      <p>Copyright &copy; {currentYear} Hosharian Law, All rights reserved</p>
+    <div className="my-10 space-y-3 px-5">
+      <p>Copyright &copy; {currentYear} Hosharian Law, All rights reserved.</p>
       <p>
         The Hosharian Law Firm is located in Glendale, CA and serves clients in
         and around Glendale, Burbank, Pasadena, Altadena, Tujunga, Silverlake,
