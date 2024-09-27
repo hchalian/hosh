@@ -13,48 +13,38 @@ const Hero = () => {
   return (
     <div className="bg-[url('/hero-bg.jpg')] bg-cover">
       <div className="bg-diffuse-blue flex w-full flex-col md:flex-row">
-        <div data-contentname="hero-text" className="p-10 md:w-1/2">
-          <h1 className="md:text-4xl lg:text-7xl">
-            <span className="block md:inline md:whitespace-nowrap lg:block xl:inline">
-              Los Angeles Attorney{' '}
-            </span>
-            <span className="block md:inline md:whitespace-nowrap lg:block xl:inline">
-              Peter Hosharian
-            </span>
-          </h1>
-          <section className="mt-8 space-y-4 text-xl font-light leading-relaxed tracking-wide md:text-base lg:text-2xl lg:leading-relaxed">
-            <p>
-              Welcome to our boutique personal injury law firm, established in
-              1995. We specialize exclusively in representing individuals
-              injured due to auto, motorcycle, bicycle, and pedestrian
-              accidents, as well as those affected by premises liability, dog
-              bites, medical malpractice, and product liability.
+        <div data-contentname="hero-text" className="p-5 md:w-1/2">
+          <section>
+            <div className="space-y-2 whitespace-nowrap py-5 font-serif font-bold text-yellow-300">
+              <p className="text-4xl">Medical Malpractice</p>
+              <p className="text-6xl">Slip and Fall</p>
+              <p className="text-5xl">Auto Accidents</p>
+            </div>
+            <div className="font-serif text-2xl font-bold uppercase">
+              <p>Free Case Evaluation</p>
+              <p>Only Pay If We Win</p>
+            </div>
+            <h1 className="mt-10 whitespace-nowrap border-t border-white/50 pt-3">
+              #1 Best Attorey <br /> Peter Hosharian
+            </h1>
+            <p className="mb-5 mt-5 text-2xl">
+              Winner of Burbank&apos;s Best attorney and law firm of the year.
             </p>
-            <p>
-              Our firm is dedicated to providing specialized service and
-              personalized care for each case, ensuring we achieve the best
-              possible results for our clients. With nearly three decades of
-              experience, we have developed a reputation for excellence and
-              commitment.
-            </p>
-            <p>
-              Contact us today for a free consultation. We proudly serve our
-              community in both Spanish and Armenian.
-            </p>
+            <div className="flex justify-between px-5">
+              <AwardImage
+                imgSrc="/burbanks-best-2023.png"
+                alt="Burbank's best 2022"
+              />
+              <AwardImage
+                imgSrc="/burbanks-best-2023.png"
+                alt="Burbank's best 2023"
+              />
+              <AwardImage
+                imgSrc="/burbanks-best-2023.png"
+                alt="Burbank's best 2024"
+              />
+            </div>
           </section>
-          <div className="tracking-relaxed mt-8 border-t border-t-gold/70 pt-4 font-serif text-4xl font-light text-gold">
-            <p>
-              If you hire a billboard attorney, you will only see that attorney
-              on a billboard.
-            </p>
-            <p className="mt-4">
-              If you hire <span className="font-semibold">Peter Hosharian</span>
-              , you will have your attorney by your side.
-            </p>
-          </div>
-          {/* <button className="bg-gold border-gold text-primary hover:text-gold w-full rounded border py-8 text-2xl font-semibold hover:bg-transparent md:w-auto md:px-14">
-            Find Out More
-          </button> */}
         </div>
         <div className="flex flex-col items-end justify-end md:w-1/2">
           <Image
@@ -87,5 +77,20 @@ const PersonalInjury = () => {
       <p>Slip and Fall</p>
       <p>MEDICAL MALPRACTICE</p> */}
     </section>
+  );
+};
+
+const AwardImage = ({ imgSrc, alt }: { imgSrc: string; alt: string }) => {
+  return (
+    <div className="w-[100px]">
+      <Image
+        src={imgSrc}
+        alt={alt}
+        width={0}
+        height={0}
+        sizes="100vw"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </div>
   );
 };
