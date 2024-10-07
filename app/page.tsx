@@ -36,10 +36,10 @@ const Hero = () => {
                 Call Us: 818 230 2755
               </p>
             </div>
-            <h1 className="mt-10 whitespace-nowrap border-t border-white/50 pt-3">
-              #1 Best Attorey <br /> Peter Hosharian
+            <h1 className="mt-10 whitespace-nowrap border-t border-white/50 pt-3 text-center">
+              Peter Hosharian
             </h1>
-            <p className="mb-5 mt-5 text-2xl">
+            <p className="mb-5 mt-5 text-center text-3xl">
               Winner of Burbank&apos;s Best attorney and law firm of the year.
             </p>
             <div className="flex justify-between px-5">
