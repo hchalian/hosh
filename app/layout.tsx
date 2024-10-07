@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Cormorant, Outfit } from 'next/font/google';
 import './globals.css';
-import Nav from '@/components/Nav';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -54,7 +53,6 @@ export default function RootLayout({
       <body>
         <div className="container mx-auto flex h-full flex-col">
           <Header />
-          <Nav />
           {children}
           <Footer />
         </div>
