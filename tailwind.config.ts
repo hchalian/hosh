@@ -14,6 +14,7 @@ const config: Config = {
       },
       colors: {
         gold: '#d1b06b',
+        gold2: '#f1d77c',
         primary: '#1f2732',
       },
     },

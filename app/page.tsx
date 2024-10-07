@@ -15,14 +15,26 @@ const Hero = () => {
       <div className="bg-diffuse-blue flex w-full flex-col md:flex-row">
         <div data-contentname="hero-text" className="p-5 md:w-1/2">
           <section>
-            <div className="space-y-2 whitespace-nowrap py-5 font-serif font-bold text-yellow-300">
-              <p className="text-4xl">Medical Malpractice</p>
-              <p className="text-6xl">Slip and Fall</p>
-              <p className="text-5xl">Auto Accidents</p>
+            <div className="space-y-2 py-5 text-center font-serif font-bold">
+              <p className="text-5xl">Top-Rated Personal Injury Firm</p>
+              <div className="pt-8">
+                <p className="text-3xl lg:text-4xl">
+                  We Specialize In: Medical Malpractice, Auto Accidents, Slip
+                  and Falls.
+                </p>
+              </div>
+              {/* <div className="pt-8">
+                <p className="text-4xl">Medical Malpractice</p>
+                <p className="text-4xl">Auto Accidents</p>
+                <p className="text-4xl">Slip and Fall</p>
+              </div> */}
             </div>
-            <div className="font-serif text-2xl font-bold uppercase">
+            <div className="pt-5 text-center font-serif text-2xl font-bold uppercase">
               <p>Free Case Evaluation</p>
-              <p>Only Pay If We Win</p>
+              <p>Only Pay When We Win!</p>
+              <p className="text-gold2 mt-6 font-sans text-3xl lg:text-5xl">
+                Call Us: 818 230 2755
+              </p>
             </div>
             <h1 className="mt-10 whitespace-nowrap border-t border-white/50 pt-3">
               #1 Best Attorey <br /> Peter Hosharian
