@@ -1,9 +1,12 @@
+import CaseTypes from '@/components/home/CaseTypes';
 import Image from 'next/image';
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <StatsBanner />
+      <CaseTypes />
       <PersonalInjury />
     </>
   );
@@ -20,7 +23,7 @@ const Hero = () => {
               <div className="pt-8">
                 <p className="text-3xl lg:text-4xl">
                   We Specialize In: Medical Malpractice, Auto Accidents, Slip
-                  and Falls.
+                  and Falls, Premises Liability Cases.
                 </p>
               </div>
               {/* <div className="pt-8">
@@ -32,7 +35,7 @@ const Hero = () => {
             <div className="pt-5 text-center font-serif text-2xl font-bold uppercase">
               <p>Free Case Evaluation</p>
               <p>Only Pay When We Win!</p>
-              <p className="text-gold2 mt-6 font-sans text-3xl lg:text-5xl">
+              <p className="mt-6 font-sans text-3xl text-gold2 lg:text-5xl">
                 Call Us: 818 230 2755
               </p>
             </div>
@@ -103,6 +106,29 @@ const AwardImage = ({ imgSrc, alt }: { imgSrc: string; alt: string }) => {
         sizes="100vw"
         style={{ width: '100%', height: 'auto' }}
       />
+    </div>
+  );
+};
+
+const StatsBanner = () => {
+  return (
+    <div className="bg-white/90">
+      <div className="mx-auto flex max-w-[600px] justify-between p-6 text-center font-bold text-gray-600">
+        <div className="max-w-[30%]">
+          <div className="text-3xl text-blue-500">$150M</div>
+          <div className="font-serif font-extrabold uppercase">Recovered</div>
+        </div>
+        <div className="max-w-[30%]">
+          <div className="text-3xl text-blue-500">30+</div>
+          <div className="font-serif font-extrabold uppercase">
+            Years of Experience
+          </div>
+        </div>
+        <div className="max-w-[30%]">
+          <div className="text-3xl text-blue-500">2k+</div>
+          <div className="font-serif font-extrabold uppercase">Cases Won</div>
+        </div>
+      </div>
     </div>
   );
 };
