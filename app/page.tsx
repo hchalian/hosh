@@ -1,4 +1,5 @@
 import CaseTypes from '@/components/home/CaseTypes';
+import Testimonials from '@/components/home/Testimonials';
 import Image from 'next/image';
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <StatsBanner />
       <CaseTypes />
       <PersonalInjury />
+      <Testimonials />
     </>
   );
 }
