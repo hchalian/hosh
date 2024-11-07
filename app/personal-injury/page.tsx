@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function PersonalInjury() {
   return (
     <main>
@@ -20,50 +22,79 @@ export default function PersonalInjury() {
             in the Superior Court.
           </p>
           <h2>Auto, Pedestrian, Motorcycle and Bicycle Accidents</h2>
-          <p>
-            If you are injured in an accident in an automobile, on a Motorcycle,
-            on a bicycle or as a pedestrian, you should seek immediate medical
-            attention. As soon as possible, you should obtain information from
-            all people involved in the accident including their name, address,
-            phone number, and insurance information. You should immediately
-            contact the police and have them prepare a traffic collision report.
-            It is also very important to get the name, address and phone number
-            of anyone who may have witnessed the accident. You should take
-            pictures of the damage to any vehicle and any visible bodily injury.
-          </p>
-          <p>
-            Once you have obtained as much information as possible at the scene
-            of the accident, immediately contact the Hosharian Law Firm.
-            Insurance companies want to pay you as little as possible, and they
-            will take advantage of you if they know you are not represented by
-            an attorney. The quicker you contact your attorney, the greater your
-            chances of success.
-          </p>
-          <p>
-            Our staff will immediately report your case to the appropriate
-            insurance companies. We will assist you in obtaining the best
-            possible value for the damage to your vehicle, your pain and
-            suffering, your loss of earnings and earning capacity, your loss of
-            consortium and your emotional distress.
-          </p>
+          <div>
+            <div className="pb-5 md:float-right md:min-w-[40%] md:pb-0 md:pl-5">
+              <Image
+                src="/caseimages/motorcicle-accident.jpg"
+                alt="slip and fall"
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: '100%', height: 'auto' }}
+              />
+            </div>
+            <p>
+              If you are injured in an accident in an automobile, on a
+              Motorcycle, on a bicycle or as a pedestrian, you should seek
+              immediate medical attention. As soon as possible, you should
+              obtain information from all people involved in the accident
+              including their name, address, phone number, and insurance
+              information. You should immediately contact the police and have
+              them prepare a traffic collision report. It is also very important
+              to get the name, address and phone number of anyone who may have
+              witnessed the accident. You should take pictures of the damage to
+              any vehicle and any visible bodily injury.
+            </p>
+            <p>
+              Once you have obtained as much information as possible at the
+              scene of the accident, immediately contact the Hosharian Law Firm.
+              Insurance companies want to pay you as little as possible, and
+              they will take advantage of you if they know you are not
+              represented by an attorney. The quicker you contact your attorney,
+              the greater your chances of success.
+            </p>
+            <p>
+              Our staff will immediately report your case to the appropriate
+              insurance companies. We will assist you in obtaining the best
+              possible value for the damage to your vehicle, your pain and
+              suffering, your loss of earnings and earning capacity, your loss
+              of consortium and your emotional distress.
+            </p>
+          </div>
           <h2>Slip and Fall</h2>
-          <p>
-            If you are the victim of a slip and fall accident, you should
-            immediately seek medical attention. As soon as possible, you should
-            report your fall to the owner/manager of the property on which you
-            were injured. You should inspect and take a picture of whatever it
-            was that caused you to fall. It is also very important to get the
-            name, address, and number of the establishment where you were
-            injured and any independent witnesses.
-          </p>
-          <p>
-            Once you have obtained as much information as possible at the scene
-            of the accident, immediately contact the Hosharian Law Firm.
-            Insurance companies want to pay you as little as possible and they
-            will take advantage of you if they know you are not represented by
-            an attorney. The quicker you contact your attorney, the greater your
-            chances of success.
-          </p>
+          <div>
+            <div className="pb-5 md:float-left md:min-w-[40%] md:pb-0 md:pr-5">
+              <Image
+                src="/caseimages/slip-and-fall.jpg"
+                alt="slip and fall"
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: '100%', height: 'auto' }}
+              />
+            </div>
+            <div>
+              <p>
+                If you are the victim of a slip and fall accident, you should
+                immediately seek medical attention. As soon as possible, you
+                should report your fall to the owner/manager of the property on
+                which you were injured. You should inspect and take a picture of
+                whatever it was that caused you to fall. It is also very
+                important to get the name, address, and number of the
+                establishment where you were injured and any independent
+                witnesses.
+              </p>
+              <p>
+                Once you have obtained as much information as possible at the
+                scene of the accident, immediately contact the Hosharian Law
+                Firm. Insurance companies want to pay you as little as possible
+                and they will take advantage of you if they know you are not
+                represented by an attorney. The quicker you contact your
+                attorney, the greater your chances of success.
+              </p>
+            </div>
+          </div>
+
           <h2>Medical Malpractice</h2>
           <p>
             Hosharian Law handles a wide variety of medical malpractice claims.
