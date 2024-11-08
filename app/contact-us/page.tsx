@@ -35,7 +35,7 @@ export default function ContantUs() {
       <div className="contact-form mt-10 rounded-lg bg-white p-5 text-gray-900">
         <form action={formAction}>
           <h2 className="mb-5 border-b border-primary/30 font-serif text-3xl font-bold text-primary">
-            Tell Us Your Issue
+            How Can We Help You?
           </h2>
           {state?.type && (
             <div

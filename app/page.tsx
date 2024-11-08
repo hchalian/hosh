@@ -21,9 +21,9 @@ const Hero = () => {
         <div data-contentname="hero-text" className="p-5 md:w-1/2">
           <section>
             <div className="space-y-2 py-5 text-center font-serif font-bold">
-              <p className="text-5xl">Top-Rated Personal Injury Firm</p>
+              <p className="text-4xl">Top-Rated Personal Injury Firm</p>
               <div className="pt-8">
-                <p className="text-3xl lg:text-4xl">
+                <p className="text-2xl lg:text-4xl">
                   We Specialize In: Medical Malpractice, Auto Accidents, Slip
                   and Falls, Premises Liability Cases.
                 </p>
