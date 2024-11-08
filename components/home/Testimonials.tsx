@@ -17,13 +17,6 @@ const TestimonialsData = [
       'Peter Hosharian is a skilled attorney and a man of great personal integrity and warmth. I have met few individuals who combine legal skills with an enjoyable personality in the way Peter does. As a fellow attorney, I have worked on matters with Peter and have been pleased to refer clients to him. I have been impressed with his preparation and diligence and have received nothing but positive feedback from those I have referred to him. I am very pleased to recommend Peter Hosharian both professionally and personally.',
   },
   {
-    id: '003',
-    name: 'Paren Ghazarian',
-    title: null,
-    testimonial:
-      'I hired another attorney to assist me in bringing my fiance from Armenia to the United States. After two years of waiting and being misled, I fired that attorney and hired Peter Hosharian. Mr. Hosharian was able to bring my fiancé to the U.S.A. in less than five months.',
-  },
-  {
     id: '004',
     name: 'Eric C. Bonholtzer, Esq.',
     title: 'Ball & Roberts',

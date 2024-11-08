@@ -59,6 +59,6 @@ export async function sendContactInfo(
 
   return {
     type: 'success',
-    message: `Thank you ${emailResult.fullname}, your question was sent. Someone will be in contanct with you shortly`,
+    message: `Thank you ${emailResult.fullname}, your question was sent. Someone from Hosharian Law will contact you shortly.`,
   };
 }
